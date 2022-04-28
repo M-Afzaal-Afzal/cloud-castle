@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .container {
+        @apply max-w-7xl mx-auto p-6;
+    }
+
+    .center-fixed-horizontally {
+        @apply left-1/2 -translate-x-1/2;
+    }
+
+    .gradient-1 {
+        background: linear-gradient(180deg, rgba(4, 0, 22, 0) 75.79%, #040016 100%),
+        linear-gradient(180deg, #040016 0%, rgba(4, 0, 22, 0) 34.26%);
+    }
+}

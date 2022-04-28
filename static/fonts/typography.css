@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Axiforma-Book';
+    src: url(Axiforma-Book.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Axiforma-Light';
+    src: url(Axiforma-Light.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Axiforma-Medium';
+    src: url(Axiforma-Medium.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Axiforma-Regular';
+    src: url(Axiforma-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Axiforma-SemiBold";
+    src: url(Axiforma-SemiBold.ttf) format('ttf');
+}
