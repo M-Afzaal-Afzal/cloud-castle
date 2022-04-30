@@ -2,6 +2,7 @@ import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState} from "react"
 import {StaticImage} from "gatsby-plugin-image"
+import Logo from '../../images/logo.png';
 
 
 function Header({siteTitle}) {
@@ -16,7 +17,7 @@ function Header({siteTitle}) {
 
                 {/*    Logo      */}
                 <StaticImage
-                    src="../images/logo.png"
+                    src={Logo}
                     alt="Logo"
                     placeholder="blurred"
                     width={150}
