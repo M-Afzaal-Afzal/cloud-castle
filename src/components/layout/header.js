@@ -19,7 +19,7 @@ function Header({siteTitle}) {
                     src={'../../images/logo.png'}
                     alt="Logo"
                     placeholder="blurred"
-                    width={150}
+                    width={158}
                     height={24.72}
                 />
 
