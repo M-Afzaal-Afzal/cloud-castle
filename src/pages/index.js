@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import {HeroSection} from "../components/homePage/HeroSection";
+import {HeroSection} from "../components/homePage";
 import {
     CloudCastleGallerySection, CloudCastleMembersSection,
     JoinWhitelistingListSection,
@@ -13,7 +13,7 @@ import {
 } from "../components/homePage";
 
 const IndexPage = () => (
-  <Layout>
+  <>
     {/*<SEO title="Home" />*/}
     {/*<h1>Hi people</h1>*/}
     {/*<p>Welcome to your new Gatsby site.</p>*/}
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <CloudCastleMembersSection/>
       <TeamSection/>
 
-  </Layout>
+  </>
 )
 
 export default IndexPage
