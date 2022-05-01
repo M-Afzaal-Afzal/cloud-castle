@@ -48,6 +48,7 @@ export const CloudCastleGallerySection = () => {
                             style={{
                                 maxWidth: '400px',
                                 width: '100%',
+                                position: 'relative',
                             }}
                         >
                             <StaticImage alt={'slider img'} src={'../../images/slider/1.png'}/>
@@ -100,6 +101,7 @@ export const CloudCastleGallerySection = () => {
                             style={{
                                 maxWidth: '400px',
                                 width: '100%',
+                                position: 'relative',
                             }}
                         >
                             <StaticImage alt={'slider img'} src={'../../images/slider/1.png'}/>
@@ -153,6 +155,7 @@ export const CloudCastleGallerySection = () => {
                             style={{
                                 maxWidth: '400px',
                                 width: '100%',
+                                position: 'relative',
                             }}
                         >
                             <StaticImage alt={'slider img'} src={'../../images/slider/1.png'}/>
