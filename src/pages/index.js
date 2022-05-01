@@ -12,7 +12,7 @@ import {
     WhyBuyCloudCastleSection
 } from "../components/homePage";
 
-const IndexPage = () => (
+const HomePage = () => (
   <>
     {/*<SEO title="Home" />*/}
     {/*<h1>Hi people</h1>*/}
@@ -37,4 +37,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default HomePage;
