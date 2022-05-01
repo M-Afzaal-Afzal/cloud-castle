@@ -5,6 +5,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import {HeroSection} from "../components/homePage/HeroSection";
+import {
+    CloudCastleGallerySection, CloudCastleMembersSection,
+    JoinWhitelistingListSection,
+    RoadmapSection, TeamSection,
+    WhyBuyCloudCastleSection
+} from "../components/homePage";
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +27,12 @@ const IndexPage = () => (
     {/*<p><Link to="/page-2/">Go to page 2</Link></p>*/}
 
       <HeroSection/>
+      <JoinWhitelistingListSection/>
+      <WhyBuyCloudCastleSection/>
+      <RoadmapSection/>
+      <CloudCastleGallerySection/>
+      <CloudCastleMembersSection/>
+      <TeamSection/>
 
   </Layout>
 )

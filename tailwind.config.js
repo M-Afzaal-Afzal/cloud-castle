@@ -15,6 +15,7 @@ module.exports = {
     colors: {
       'white': '#fff',
       'blue': "#2B33EF",
+      'gray': "#B4B3BA",
       'blue-light': '#413C66',
       'black': "#000",
     },
@@ -41,7 +42,9 @@ module.exports = {
 
          "white": "#fff",
 
-          black: "#000",
+          "black": "#000",
+
+          "gray": "#B4B3BA",
 
           "success": "#36D399",
 

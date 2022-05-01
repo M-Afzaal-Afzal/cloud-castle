@@ -26,7 +26,7 @@ const WhitePaperButton = () => {
     )
 }
 
-function Header({siteTitle, children}) {
+function Header({children}) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -131,14 +131,6 @@ function Header({siteTitle, children}) {
 
         </>
     )
-}
-
-Header.propTypes = {
-    siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-    siteTitle: ``,
 }
 
 export default Header
