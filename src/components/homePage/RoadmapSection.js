@@ -40,7 +40,7 @@ export const RoadmapSection = () => {
     return (
         <div className={`bg-black py-24`}>
 
-            <div className={`container`}>
+            <div className={``}>
                 <ResponsiveH1 className={`text-center`}>
                     roadmap
                 </ResponsiveH1>
@@ -54,7 +54,7 @@ export const RoadmapSection = () => {
                 </div>
 
                 {/*    Roadmap for mobile   */}
-                <div className={`block xl:hidden pt-16 flex flex-wrap items-center justify-center gap-8`}>
+                <div className={`block container xl:hidden pt-16 flex flex-wrap items-center justify-center gap-8`}>
 
                     {
                         roadmapData.map(({id,heading,status,desc}) => (
