@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const ButtonText = () => {
+export const ButtonText = ({children}) => {
     return (
-        <div>
-            Button Text
+        <div className={`cursor-pointer text-white`}>
+            {children}
         </div>
     );
 };

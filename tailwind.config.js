@@ -14,6 +14,7 @@ module.exports = {
     },
     colors: {
       'white': '#fff',
+      'blue': "#2B33EF",
       'blue-light': '#413C66',
       'black': "#000",
     },
@@ -29,5 +30,27 @@ module.exports = {
     extend: {},
   },
   variants: {},
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#2B33EF",
+
+          "secondary": "#413C66",
+
+         "white": "#fff",
+
+          black: "#000",
+
+          "success": "#36D399",
+
+          "warning": "#FBBD23",
+
+          "error": "#F87272",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
 }
