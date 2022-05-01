@@ -66,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
+        postCssPlugins: [require("tailwindcss"),require('daisyui'), require("autoprefixer")]
       }
     },
     {
@@ -75,6 +75,7 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
+        daisyui: true,
       },
     },
 
