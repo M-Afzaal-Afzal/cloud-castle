@@ -33,4 +33,11 @@
         top: 0;
         left: 0;
     }
+
+    .roadmap-border {
+        border-bottom: 2px solid;
+        @apply w-full h-[2px];
+        background: linear-gradient(90deg, #69778A -1.77%, #000000 100%);
+
+    }
 }
