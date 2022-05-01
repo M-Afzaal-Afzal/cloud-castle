@@ -13,7 +13,7 @@ import {
 } from "../components/homePage";
 
 const IndexPage = () => (
-  <>
+  <Layout>
     {/*<SEO title="Home" />*/}
     {/*<h1>Hi people</h1>*/}
     {/*<p>Welcome to your new Gatsby site.</p>*/}
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <CloudCastleMembersSection/>
       <TeamSection/>
 
-  </>
+  </Layout>
 )
 
 export default IndexPage

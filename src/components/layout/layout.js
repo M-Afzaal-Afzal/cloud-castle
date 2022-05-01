@@ -11,6 +11,11 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./Footer";
 
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/bundle";
+
 const Layout = ({children}) => {
 
     return (
