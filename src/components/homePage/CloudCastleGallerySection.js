@@ -47,7 +47,7 @@ export const CloudCastleGallerySection = () => {
                         <SwiperSlide
                             style={{
                                 maxWidth: '400px',
-                                width: '100%',
+                                // width: '100%',
                                 position: 'relative',
                             }}
                         >
@@ -62,6 +62,7 @@ export const CloudCastleGallerySection = () => {
                                         Ownership
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] sm:text-[20px] tracking-normal lg:text-[22px]`}>
                                         25%
                                     </ResponsiveH1>
@@ -74,6 +75,7 @@ export const CloudCastleGallerySection = () => {
                                     </ResponsiveBody1>
                                     <div className={`flex items-center gap-2`}>
                                         <ResponsiveH1
+                                            hasCustomFontSize={true}
                                             className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                             25%
                                         </ResponsiveH1>
@@ -89,6 +91,7 @@ export const CloudCastleGallerySection = () => {
                                         Location
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                         Jupitar
                                     </ResponsiveH1>
@@ -100,7 +103,7 @@ export const CloudCastleGallerySection = () => {
                         <SwiperSlide
                             style={{
                                 maxWidth: '400px',
-                                width: '100%',
+                                // width: '100%',
                                 position: 'relative',
                             }}
                         >
@@ -115,6 +118,7 @@ export const CloudCastleGallerySection = () => {
                                         Ownership
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] sm:text-[20px] tracking-normal lg:text-[22px]`}>
                                         25%
                                     </ResponsiveH1>
@@ -127,6 +131,7 @@ export const CloudCastleGallerySection = () => {
                                     </ResponsiveBody1>
                                     <div className={`flex items-center gap-2`}>
                                         <ResponsiveH1
+                                            hasCustomFontSize={true}
                                             className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                             25%
                                         </ResponsiveH1>
@@ -142,6 +147,7 @@ export const CloudCastleGallerySection = () => {
                                         Location
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                         Jupitar
                                     </ResponsiveH1>
@@ -154,7 +160,7 @@ export const CloudCastleGallerySection = () => {
                         <SwiperSlide
                             style={{
                                 maxWidth: '400px',
-                                width: '100%',
+                                // width: '100%',
                                 position: 'relative',
                             }}
                         >
@@ -169,6 +175,7 @@ export const CloudCastleGallerySection = () => {
                                         Ownership
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] sm:text-[20px] tracking-normal lg:text-[22px]`}>
                                         25%
                                     </ResponsiveH1>
@@ -181,6 +188,7 @@ export const CloudCastleGallerySection = () => {
                                     </ResponsiveBody1>
                                     <div className={`flex items-center gap-2`}>
                                         <ResponsiveH1
+                                            hasCustomFontSize={true}
                                             className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                             25%
                                         </ResponsiveH1>
@@ -196,6 +204,7 @@ export const CloudCastleGallerySection = () => {
                                         Location
                                     </ResponsiveBody1>
                                     <ResponsiveH1
+                                        hasCustomFontSize={true}
                                         className={`text-[16px] md:text-[20px] tracking-normal lg:text-[22px]`}>
                                         Jupitar
                                     </ResponsiveH1>
