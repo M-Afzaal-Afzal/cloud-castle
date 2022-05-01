@@ -1,6 +1,5 @@
 import React from 'react';
 import {ResponsiveBody1, ResponsiveH1} from "../common/typography";
-// import {Swiper, SwiperSlide} from "swiper/react";
 import {StaticImage} from "gatsby-plugin-image";
 
 import Slider from "react-slick";
