@@ -66,12 +66,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"),require('daisyui'), require("autoprefixer")]
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
       }
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        ignore: [
+          '/node_modules/slick-carousel/slick/slick.css',
+          '/node_modules/slick-carousel/slick/slick-theme.css'
+        ],
         printRejected: false,
         develop: false,
         tailwind: true,
