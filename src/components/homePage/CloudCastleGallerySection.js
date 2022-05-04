@@ -54,7 +54,7 @@ export const CloudCastleGallerySection = () => {
                         {/*     First Slide     */}
                         <div
                             style={{
-                                width: '400px',
+                                width: '410px',
                                 // width: '100%',
                                 position: 'relative',
                             }}
@@ -111,10 +111,10 @@ export const CloudCastleGallerySection = () => {
                             </div>
                         </div>
 
-                        {/*     First Slide     */}
+                        {/*     Second Slide     */}
                         <div
                             style={{
-                                width: '400px',
+                                width: '410px',
                                 // width: '100%',
                                 position: 'relative',
                             }}
@@ -172,10 +172,10 @@ export const CloudCastleGallerySection = () => {
                         </div>
 
 
-                        {/*     First Slide     */}
+                        {/*     3rd Slide     */}
                         <div
                             style={{
-                                width: '400px',
+                                width: '410px',
                                 // width: '100%',
                                 position: 'relative',
                             }}
