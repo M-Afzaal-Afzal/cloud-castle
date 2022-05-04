@@ -13,7 +13,7 @@ const settings = {
     swipeToSlide: true,
     slidesToScroll: 1,
     variableWidth: true,
-    arrows: false,
+    arrows: true,
 };
 
 
