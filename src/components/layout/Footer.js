@@ -1,6 +1,6 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import img from '../../images/cloud_icon_white.svg'
+
 import {ResponsiveBody1, ResponsiveH1} from "../common/typography";
 import {ButtonPrimary} from "../common/buttons/ButtonPrimary";
 
