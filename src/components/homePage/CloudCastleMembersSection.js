@@ -2,6 +2,52 @@ import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {ResponsiveBody1, ResponsiveH1} from "../common/typography";
 
+const teamMembers = [
+    {
+        id: 1,
+        imgSrc: "../../images/members/Clark.png",
+        name: "Maclaren",
+        desc: <>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+            <br/>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </>,
+    }, {
+        id: 2,
+        imgSrc: "../../images/members/Emily.png",
+        name: "Emily",
+        desc: <>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        </>,
+    }, {
+        id: 3,
+        imgSrc: "../../images/members/Loran.png",
+        name: "Loran",
+        desc: <>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        </>,
+    }, {
+        id: 4,
+        imgSrc: "../../images/members/Clark.png",
+        name: "Maclaren",
+        desc: <>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+            <br/>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </>,
+    },
+]
+
 export const CloudCastleMembersSection = () => {
     return (
         <div className={`pb-24 bg-black grid`}>
@@ -46,7 +92,7 @@ export const CloudCastleMembersSection = () => {
                             {/*     image section    */}
                             <div className={'col-span-1'}>
                                 <StaticImage
-                                    src={'../../images/team/Clark.png'}
+                                    src={'../../images/members/Clark.png'}
                                     alt={'Clark'}
                                     objectFit={'cover'}
                                 />
@@ -74,7 +120,7 @@ export const CloudCastleMembersSection = () => {
                             {/*     image section    */}
                             <div className={'col-span-1'}>
                                 <StaticImage
-                                    src={'../../images/team/Emily.png'}
+                                    src={'../../images/members/Emily.png'}
                                     alt={'Clark'}
                                     objectFit={'cover'}
                                 />
@@ -102,7 +148,7 @@ export const CloudCastleMembersSection = () => {
                             {/*     image section    */}
                             <div className={'col-span-1'}>
                                 <StaticImage
-                                    src={'../../images/team/Loran.png'}
+                                    src={'../../images/members/Loran.png'}
                                     alt={'Clark'}
                                     objectFit={'cover'}
                                 />
@@ -130,7 +176,7 @@ export const CloudCastleMembersSection = () => {
                             {/*     image section    */}
                             <div className={'col-span-1'}>
                                 <StaticImage
-                                    src={'../../images/team/Clark.png'}
+                                    src={'../../images/members/Clark.png'}
                                     alt={'Clark'}
                                     objectFit={'cover'}
                                 />
