@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+// import { Link } from "gatsby"
+// import { StaticImage } from "gatsby-plugin-image"
+//
+// import Layout from "../components/layout/layout"
+// import SEO from "../components/seo"
 import {HeroSection} from "../components/homePage";
 import {
     CloudCastleGallerySection, CloudCastleMembersSection,

@@ -22,7 +22,7 @@ export const JoinWhitelistingListSection = () => {
                 alt="Background Starts"
                 // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
                 src={
-                    "../../images/waitingListBackground.svg"
+                    "../../images/galaxy-background.png"
                 }
                 formats={["auto", "webp", "avif"]}
             />
