@@ -2,8 +2,6 @@ import React from 'react';
 import {ResponsiveH1} from "../common/typography";
 import {StaticImage} from "gatsby-plugin-image";
 
-import Image from '../../images/icons/twitter-blue.png'
-
 export const TeamSection = () => {
     return (
         <div className={`bg-black`}>
