@@ -7,6 +7,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.4",
     "daisyui": "^2.14.2",
+    "framer-motion": "^6.3.3",
     "gatsby": "^4.11.2",
     "gatsby-omni-font-loader": "^2.0.0",
     "gatsby-plugin-google-analytics": "^4.0.0",
@@ -25,6 +26,7 @@
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
+    "react-intersection-observer": "^9.1.0",
     "react-player": "^2.10.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"

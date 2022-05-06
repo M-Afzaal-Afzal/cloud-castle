@@ -1,10 +1,25 @@
-import {Link} from "gatsby"
-import PropTypes from "prop-types"
-import React, {useState} from "react"
+// import {Link} from "gatsby"
+// import PropTypes from "prop-types"
+import React, {useEffect, useState} from "react"
 import {StaticImage} from "gatsby-plugin-image"
 import {links} from "../../utils/utils";
 import {ButtonText} from "../common/buttons/ButtonText";
 import {ButtonPrimary} from "../common/buttons/ButtonPrimary";
+import {
+    motion,
+    useViewportScroll,
+    useSpring,
+    useTransform
+} from "framer-motion";
+
+const navbarVariants = {
+    hidden: {
+        y: 30,
+    },
+    visible: {
+        y: 0,
+    }
+}
 
 const CompanyLogo = () => {
     return (
@@ -28,11 +43,47 @@ const WhitePaperButton = () => {
 
 function Header({children}) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+
+    const [isGreaterThan3,setIsGreaterThan3] = useState(false)
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     }
 
+    const controlNavbar = (e) => {
+
+        const winScroll = document.getElementById("drawer-content").scrollTop;
+        const height = document.getElementById("drawer-content").scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+
+        console.log(scrolled,'scrolled')
+
+        if ( Math.round(scrolled) > 5) {
+            setIsGreaterThan3(true)
+
+        } else {
+            setIsGreaterThan3(false)
+
+        }
+
+
+        if ( Math.round(scrolled) > 9) {
+            setIsNavbarFixed(true)
+
+        } else {
+            setIsNavbarFixed(false)
+
+        }
+    }
+
+    useEffect(() => {
+        document.getElementById("drawer-content").addEventListener('scroll',controlNavbar)
+
+        return () => {
+            document.getElementById("drawer-content").removeEventListener('scroll',controlNavbar)
+        }
+    },[])
 
     return (
         <>
@@ -40,10 +91,13 @@ function Header({children}) {
 
             <div className="drawer">
                 <input checked={isSidebarOpen} id="my-drawer-3" type="checkbox" className="drawer-toggle"/>
-                <div className="drawer-content flex flex-col">
+                <div id={'drawer-content'} className="drawer-content relative flex flex-col">
                     {/*Navbar  */}
 
-                    <div className={`bg-[#FFFFFF4C] z-[999] backdrop-blur-lg fixed top-0 left-0 w-full`}>
+                    <div
+                        className={`bg-[#000] transition-all z-[999] backdrop-blur-lg ${isNavbarFixed ? "c-navbar" : "absolute"} ${isGreaterThan3 && !isNavbarFixed ? "top-[30px] opacity-0" : ''} top-0 left-0 w-full`}
+
+                    >
 
                         <nav
                             className={`flex flex-wrap items-center justify-between container bg-transparent `}
@@ -101,7 +155,12 @@ function Header({children}) {
                     </div>
 
                     {/*Page content here  */}
-                    {children}
+                    <div
+                        className={`mt-24`}
+                    >
+                        {children}
+                    </div>
+
                 </div>
                 <div className="drawer-side">
                     <label onClick={toggleSidebar} htmlFor="my-drawer-3" className="drawer-overlay"></label>
