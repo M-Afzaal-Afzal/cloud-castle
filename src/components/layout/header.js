@@ -57,7 +57,7 @@ function Header({children}) {
         const height = document.getElementById("drawer-content").scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
 
-        console.log(scrolled,'scrolled')
+        // console.log(scrolled,'scrolled')
 
         if ( Math.round(scrolled) > 5) {
             setIsGreaterThan3(true)
