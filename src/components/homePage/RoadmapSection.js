@@ -172,11 +172,6 @@ export const RoadmapSection = () => {
                             </p>
                         </VerticalTimelineElement>
 
-
-
-
-
-
                         {/*<VerticalTimelineElement*/}
                         {/*    iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}*/}
                         {/*    // icon={<StarIcon />}*/}
