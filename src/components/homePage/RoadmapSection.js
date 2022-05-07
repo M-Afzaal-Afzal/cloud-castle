@@ -59,9 +59,7 @@ export const RoadmapSection = () => {
                 // This is a presentational image, so the alt should be an empty string
                 alt="black-hole-space-planet"
                 // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
-                src={
-                    "../../images/roadmap-bg.png"
-                }
+                src={"../../images/roadmap-bg.png"}
                 formats={["auto", "webp", "avif"]}
             />
 
