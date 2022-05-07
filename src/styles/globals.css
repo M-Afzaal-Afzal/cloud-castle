@@ -19,10 +19,10 @@
 
     .gradient-black-hole-space-planet {
         background: linear-gradient(180deg, rgba(4, 0, 22, 0) 78.44%, #040016 100%),
-                    linear-gradient(180deg, #040016 0%, rgba(4, 0, 22, 0) 32.57%);
+        linear-gradient(180deg, #040016 0%, rgba(4, 0, 22, 0) 32.57%);
     }
 
-/*    Video Player Styles     */
+    /*    Video Player Styles     */
     .player-wrapper {
         position: relative;
         padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
@@ -75,13 +75,13 @@
 
     .c-navbar {
         position: fixed;
-        animation:  .5s ease-out .5s 1 slideTop;
+        animation: .5s ease-out .5s 1 slideTop;
 
     }
 
     @keyframes slideTop {
         0% {
-          /*top: 20px;*/
+            /*top: 20px;*/
             opacity: 1;
         }
 
@@ -93,7 +93,6 @@
 
 
     /*      Timeline Styles    */
-
     .timeline-container {
         font-family: "Roboto", sans-serif;
         max-width: 500px;
@@ -193,6 +192,63 @@
             top: 0;
             left: 1rem;
         }
+    }
+
+
+    :root {
+        --swiper-navigation-size: 44px
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    }
+
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 10px;
+        right: auto
+    }
+
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: 'prev'
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 10px;
+        left: auto
+    }
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: 'next'
+    }
+
+    .swiper-button-lock {
+        display: none
     }
 
 }
