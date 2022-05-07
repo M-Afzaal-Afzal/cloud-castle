@@ -81,6 +81,7 @@ module.exports = {
           // '/node_modules/swiper/swiper-vars.scss',
           '/node_modules/swiper/swiper-vars.css',
           '/node_modules/swiper/swiper-bundle.css',
+          '/node_modules/swiper/modules/navigation/navigation.min.css',
         ],
         printRejected: false,
         develop: false,
