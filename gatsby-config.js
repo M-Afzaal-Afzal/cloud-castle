@@ -75,7 +75,10 @@ module.exports = {
         ignore: [
           '/node_modules/swiper/css/pagination',
           '/node_modules/swiper/css/bundle',
-          '/node_modules/swiper/css',
+          '/node_modules/swiper/swiper-bundle.css',
+          '/node_modules/swiper/swiper.scss',
+          '/node_modules/swiper/swiper-vars.scss',
+          '/node_modules/swiper/swiper-bundle.css',
         ],
         printRejected: false,
         develop: false,
