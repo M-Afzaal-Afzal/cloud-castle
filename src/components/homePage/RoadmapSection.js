@@ -1,7 +1,6 @@
 import React from 'react';
-import {ResponsiveBody1, ResponsiveH1} from "../common/typography";
+import { ResponsiveH1} from "../common/typography";
 import {StaticImage} from "gatsby-plugin-image"
-import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 
 const roadmapData = {
     first: {
@@ -45,117 +44,123 @@ const roadmapData = {
 
 export const RoadmapSection = () => {
     return (
-        <div className={`bg-black py-24`}>
+        <div className={`bg-black py-24 grid relative`}>
 
-            <div className={``}>
-                <ResponsiveH1 className={`text-center`}>
-                    roadmap
-                </ResponsiveH1>
+            <StaticImage
+                className={`block xl:hidden  -ml-[30rem] md:-ml-[15rem]`}
+                style={{
+                    gridArea: "1/1",
+                    // You can set a maximum height for the image, if you wish.
+                    // maxHeight: 1000,
+                }}
+                layout="fullWidth"
+                // You can optionally force an aspect ratio for the generated image
+                // aspectRatio={3 / 1}
+                // This is a presentational image, so the alt should be an empty string
+                alt="black-hole-space-planet"
+                // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
+                src={
+                    "../../images/roadmap-bg.png"
+                }
+                formats={["auto", "webp", "avif"]}
+            />
 
-                {/*     Roadmap for Desktop     */}
-                <div className={`hidden xl:block pt-16`}>
-                    <StaticImage
-                        src={'../../images/roadmap-desktop.svg'}
-                        alt={'roadmap for desktop'}
-                    />
-                </div>
+            <div
+                style={{
+                    // By using the same grid area for both, they are stacked on top of each other
+                    gridArea: "1/1",
+                    position: "relative",
+                    // This centers the other elements inside the hero component
+                    // placeItems: "center",
+                    display: "grid",
+                }}
+            >
+                {/*     Roadmap Content     */}
+                <div className={``}>
+                    <ResponsiveH1 className={`text-left xl:text-center container pl-8 sm:pl-20`}>
+                        roadmap
+                    </ResponsiveH1>
 
-                {/*    Roadmap for mobile   */}
-                <div className={`block container xl:hidden pt-16 flex flex-wrap items-center justify-start xl:justify-center gap-8`}>
+                    {/*     Roadmap for Desktop     */}
+                    <div className={`hidden xl:block pt-16`}>
+                        <StaticImage
+                            src={'../../images/roadmap-desktop.svg'}
+                            alt={'roadmap for desktop'}
+                        />
+                    </div>
 
-                    {/*{*/}
-                    {/*    roadmapData.map(({id,heading,status,desc}) => (*/}
-                    {/*        <div key={id} className={`relative max-w-[300px] h-[188px] w-full bg-[rgba(255,255,255,.1)] rounded-lg overflow-hidden p-4`}>*/}
-                    {/*            <h3 className={`text-base text-primary font-Axiforma-SemiBold tracking-wide`}>*/}
-                    {/*                {heading}*/}
-                    {/*            </h3>*/}
+                    {/*    Roadmap for mobile   */}
+                    <div className={`block container xl:hidden pt-16 flex flex-wrap items-center justify-start xl:justify-center gap-8`}>
 
-                    {/*            <ResponsiveH1 className={`mt-4`}>*/}
-                    {/*                {status}*/}
-                    {/*            </ResponsiveH1>*/}
+                        {/*    Timeline     */}
 
-                    {/*            <ResponsiveBody1 className={`my-4`}>*/}
-                    {/*                {desc}*/}
-                    {/*            </ResponsiveBody1>*/}
+                        <div className="timeline-container">
+                            <div className="event">
+                                <div className="event-date">{roadmapData.first.status}</div>
 
-                    {/*            /!*     roadmap bottom border   *!/*/}
-                    {/*            <div className="absolute left-0 bottom-0 w-full roadmap-border"/>*/}
-
-                    {/*        </div>*/}
-
-                    {/*    ))*/}
-                    {/*}*/}
-
-
-
-                {/*    Timeline     */}
-
-                    <div className="timeline-container">
-                        <div className="event">
-                            <div className="event-date">{roadmapData.first.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.first.desc}
-                                </p>
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.first.desc}
+                                    </p>
+                                </div>
                             </div>
+
+                            <div className="event">
+                                <div className="event-date">{roadmapData.second.status}</div>
+
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.second.desc}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="event">
+                                <div className="event-date">{roadmapData.third.status}</div>
+
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.third.desc}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="event">
+                                <div className="event-date">{roadmapData.fourth.status}</div>
+
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.fourth.desc}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="event">
+                                <div className="event-date">{roadmapData.fifth.status}</div>
+
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.fifth.desc}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="event">
+                                <div className="event-date">{roadmapData.sixth.status}</div>
+
+                                <div className="timeline-content">
+                                    <p className={`font-Axiforma-Regular`}>
+                                        {roadmapData.sixth.desc}
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div className="event">
-                            <div className="event-date">{roadmapData.second.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.second.desc}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="event">
-                            <div className="event-date">{roadmapData.third.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.third.desc}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="event">
-                            <div className="event-date">{roadmapData.fourth.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.fourth.desc}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="event">
-                            <div className="event-date">{roadmapData.fifth.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.fifth.desc}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="event">
-                            <div className="event-date">{roadmapData.sixth.status}</div>
-
-                            <div className="timeline-content">
-                                <p className={`font-Axiforma-Regular`}>
-                                    {roadmapData.sixth.desc}
-                                </p>
-                            </div>
-                        </div>
 
                     </div>
 
-
                 </div>
-
             </div>
 
         </div>
