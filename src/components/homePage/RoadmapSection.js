@@ -61,7 +61,7 @@ export const RoadmapSection = () => {
                 </div>
 
                 {/*    Roadmap for mobile   */}
-                <div className={`block container xl:hidden pt-16 flex flex-wrap items-center justify-center gap-8`}>
+                <div className={`block container xl:hidden pt-16 flex flex-wrap items-center justify-start xl:justify-center gap-8`}>
 
                     {/*{*/}
                     {/*    roadmapData.map(({id,heading,status,desc}) => (*/}
@@ -87,96 +87,71 @@ export const RoadmapSection = () => {
                     {/*}*/}
 
 
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.first.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.first.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.first.desc}
-                            </p>
-                        </VerticalTimelineElement>
 
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.second.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.second.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.second.desc}
-                            </p>
-                        </VerticalTimelineElement>
+                {/*    Timeline     */}
 
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.third.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.third.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.third.desc}
-                            </p>
-                        </VerticalTimelineElement>
+                    <div className="timeline-container">
+                        <div className="event">
+                            <div className="event-date">{roadmapData.first.status}</div>
 
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.fourth.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.fourth.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.fourth.desc}
-                            </p>
-                        </VerticalTimelineElement>
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.first.desc}
+                                </p>
+                            </div>
+                        </div>
 
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.fifth.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.fifth.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.fifth.desc}
-                            </p>
-                        </VerticalTimelineElement>
+                        <div className="event">
+                            <div className="event-date">{roadmapData.second.status}</div>
 
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
-                            date={<ResponsiveH1 className={`-pt-[4px]`}>{roadmapData.sixth.status}</ResponsiveH1>}
-                            iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff',marginTop: '.5rem'}}
-                        >
-                            <h3 className="vertical-timeline-element-title">{roadmapData.sixth.heading}</h3>
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
-                            <p>
-                                {roadmapData.sixth.desc}
-                            </p>
-                        </VerticalTimelineElement>
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.second.desc}
+                                </p>
+                            </div>
+                        </div>
 
-                        {/*<VerticalTimelineElement*/}
-                        {/*    iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}*/}
-                        {/*    // icon={<StarIcon />}*/}
-                        {/*/>*/}
-                    </VerticalTimeline>
+                        <div className="event">
+                            <div className="event-date">{roadmapData.third.status}</div>
+
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.third.desc}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="event">
+                            <div className="event-date">{roadmapData.fourth.status}</div>
+
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.fourth.desc}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="event">
+                            <div className="event-date">{roadmapData.fifth.status}</div>
+
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.fifth.desc}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="event">
+                            <div className="event-date">{roadmapData.sixth.status}</div>
+
+                            <div className="timeline-content">
+                                <p className={`font-Axiforma-Regular`}>
+                                    {roadmapData.sixth.desc}
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
 
 
                 </div>

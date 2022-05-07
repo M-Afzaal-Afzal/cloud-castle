@@ -74,8 +74,7 @@ module.exports = {
       options: {
         ignore: [
           '/node_modules/slick-carousel/slick/slick.css',
-          '/node_modules/slick-carousel/slick/slick-theme.css',
-           '/node_modules/react-vertical-timeline-component/style.min.css'
+          '/node_modules/slick-carousel/slick/slick-theme.css'
         ],
         printRejected: false,
         develop: false,
