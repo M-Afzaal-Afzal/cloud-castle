@@ -73,8 +73,9 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         ignore: [
-          '/node_modules/slick-carousel/slick/slick.css',
-          '/node_modules/slick-carousel/slick/slick-theme.css'
+          '/node_modules/swiper/css/pagination',
+          '/node_modules/swiper/css/bundle',
+          '/node_modules/swiper/css',
         ],
         printRejected: false,
         develop: false,
